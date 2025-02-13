@@ -1,0 +1,159 @@
+/* Estilo geral da página */
+*{
+    scroll-behavior: smooth; /* Adiciona um efeito de rolagem suave */
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Isso ajuda a garantir que o rodapé fique no final da página */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navegação */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center; /* Alinha os links do menu no centro */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px; /* Cantos arredondados nos links */
+}
+
+nav ul li a:hover {
+    background-color: #007bff; /* Fundo azul ao passar o mouse */
+    color: white; /* Cor do texto mantém-se branco no hover */
+}
+
+/* Estilo principal */
+main {
+    padding: 20px;
+    width: 80%; /* Largura fixa de 80% */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    background-color: white;
+    border-radius: 8px;
+    min-height: 400px;
+   max-height: fit-content;
+    box-shadow: 04px 8px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Garante que o conteúdo principal ocupe o espaço restante */
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+}
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+}
+
+form label {
+    margin: 10px 0 5px;
+    font-size: 1.1em;
+}
+
+form input, form textarea {
+    padding: 8px;
+    margin: 5px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+}
+input[type="button" i]{
+    background-color: #007bff;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    width: 100%;
+    padding-right: 20px;
+}
+
+form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+form button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #007bff; /* Cor azul */
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 10px; /* Espaço entre o botão e os campos do formulário */
+    margin-right: -22px;
+}
+
+form button:hover {
+    background-color: #0056b3; /* Cor azul mais escura no hover */
+    transform: translateY(-2px); /* Efeito de "levitação" */
+}
+
+form button:active {
+    background-color: #004085; /* Cor ainda mais escura no clique */
+    transform: translateY(0); /* Anula o efeito de "levitação" ao clicar */
+}
+
+/* Estilo da página de confirmação */
+main h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+}
+
+main p {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+main img {
+    display: block;
+    margin: 30px auto;
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Rodapé fixo */
+footer {
+    position: sticky;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto; /* Garante que o rodapé fique no final da página */
+    z-index: 1000;
+}
+
+footer p {
+    margin: 0;
+}
+
+

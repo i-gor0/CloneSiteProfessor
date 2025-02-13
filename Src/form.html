@@ -9,43 +9,38 @@
 <body>
    <header>
     <h1>
-        Curiosidades sobre Programação
+        Formulário de Teste
     </h1>
-    <ul>
-        <a href="./PagInic.htm">
-            <li>Página Inicial</li>
-        </a>
-        <a href="./Form.html">
-            <li>Formulário Teste</li>
-        </a>
-        <a href="./Login.html">
-            <li>Login</li>
-        </a>
-        <a href="./Curiosidades.html">
-            <li>Curiosidades</li>
-        </a>
-    </ul>
+    <nav>
+        <ul>
+            <li><a href="./PagInic.htm">Página Inicial</a></li>
+            <li><a href="./Form.html">Formulário de Teste</a></li>
+            <li><a href="./Login.html">Login</a></li>
+            <li><a href="./Curiosidades.html">Curiosidades</a></li>
+        </ul>
+    </nav>
    </header>
    <main>
     <h2>
-        Preencha o Formulário
+        Preencha o formulário abaixo
     </h2>
     <form action="" method="post">
-        <label for="">
+        <label for="Nome">
             Nome:
             <input type="text" name="nome" id="Nome">
         </label>
-        <label for="">
-            Email:
+        <label for="Email">
+            E-mail:
             <input type="email" name="email" id="Email">
         </label>
-        <label for="">
+        <label for="Msg">
             Mensagem:
-            <input type="text" name="msg" id="Msg">
+            <textarea name="msg" id="Msg" cols="30" rows="10"></textarea>
         </label>
+        <button type="submit">Enviar</button>
     </form>
-    <footer>@2025 Meu Site</footer>
    </main>
+   <footer>@2025 Meu Site</footer>
    <script src="Script.js"></script>
 </body>
 </html>
